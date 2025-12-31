@@ -28,18 +28,3 @@ int matchstar(int c, char *regexp, char *text){
             return 1;
     } while (*text!='\0' && (*text++==c || c=='.'));
     return 0;
-}
-/* Example usage */
-int main() {
-    char regexp[50] ;char text[50];
-    printf("Enter regexp and text: ");
-    fflush(stdout);
-    scanf("%s %s", regexp, text);
-
-    if (match(regexp, text)) {
-        printf("Match found!\n");
-    } else {
-        printf("No match.\n");
-    return 0;
-    }
-}
