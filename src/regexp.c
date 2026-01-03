@@ -27,4 +27,4 @@ int matchstar(int c, char *regexp, char *text){
         if (mactchhere(regexp,text))
             return 1;
     } while (*text!='\0' && (*text++==c || c=='.'));
-    return 0;
+    return 0;}
